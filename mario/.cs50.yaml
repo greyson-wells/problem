@@ -1,7 +1,12 @@
 check50:
   checks:
-    OneHigh:
+    input of 1 yields correct output:
       - run: python3 mario.py
         stdin: 1
         stdout: "#"
+        exit: 0
+    input of 2 yields correct output:
+      - run: python3 mario.py
+        stdin: 2
+        stdout: " #\n##"
         exit: 0
