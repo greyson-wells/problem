@@ -3,5 +3,5 @@ check50:
     OneHigh:
       - run: python3 mario.py
         stdin: 1
-        stdout: #
+        stdout: "#"
         exit: 0
