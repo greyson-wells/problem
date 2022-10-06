@@ -1,0 +1,7 @@
+check50:
+  checks:
+    One High:
+      - run: python3 mario.py
+        stdin: 1
+        stdout: #
+        exit: 0
