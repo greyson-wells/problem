@@ -16,3 +16,7 @@ check50:
       - run: python3 mario.py
         stdin: 8
         stdout: "       #\n      ##\n     ###\n    ####\n   #####\n  ######\n #######\n########"
+    input of hello does not output:
+      - run: python3 mario.py
+        stdin: hello
+        stdout: 
