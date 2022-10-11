@@ -16,6 +16,22 @@ check50:
       - run: python3 mario.py
         stdin: 8
         stdout: "       #\n      ##\n     ###\n    ####\n   #####\n  ######\n #######\n########"
+    input of -3 does not output:
+      - run: python3 mario.py
+        stdin: -3
+        stdout: ""
+    input of 0 does not output:
+      - run: python3 mario.py
+        stdin: 0
+        stdout: ""
+    input of 9 does not output:
+      - run: python3 mario.py 
+        stdin: 9
+        stdout: ""
+    input of 12 does not output:
+      - run: python3 mario.py
+        stdin: 12
+        stdout: ""
     input of hello does not output:
       - run: python3 mario.py
         stdin: hello
