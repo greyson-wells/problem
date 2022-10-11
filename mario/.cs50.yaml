@@ -13,6 +13,6 @@ check50:
      input of 5 yields correct output:
       - run: python3 mario.py
         stdin: 5
-        stdout: "    #\n   ##\n  ###\n ####\n#####"
+        stdout: " #\n##"
         exit: 0
 
