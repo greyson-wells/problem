@@ -12,3 +12,7 @@ check50:
       - run: python3 mario.py
         stdin: 5
         stdout: "    #\n   ##\n  ###\n ####\n#####"
+    input of 8 yields correct output:
+      - run: python3 mario.py
+        stdin: 8
+        stdout: "       #\n      ##\n     ###\n    ####\n   #####\n  ######\n #######\n########"
