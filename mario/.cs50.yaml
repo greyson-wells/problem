@@ -19,4 +19,4 @@ check50:
     input of hello does not output:
       - run: python3 mario.py
         stdin: hello
-        stdout: 
+        stdout: ""
