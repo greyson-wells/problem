@@ -10,9 +10,3 @@ check50:
         stdin: 2
         stdout: " #\n##"
         exit: 0
-     input of 5 yields correct output:
-      - run: python3 mario.py
-        stdin: 5
-        stdout: " #\n##"
-        exit: 0
-
