@@ -15,7 +15,7 @@ check50:
       - run: python3 mario.py
         stdin: 5
         stdout: |
-              #
+             #
              ##
             ###
            ####
