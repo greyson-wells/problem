@@ -1,0 +1,54 @@
+check50:
+  checks:
+    input of 1 yields correct output:
+      - run: python3 mario.py
+        stdin: 1
+        stdout: |
+          #
+    input of 2 yields correct output:
+      - run: python3 mario.py
+        stdin: 2
+        stdout: |
+           #
+          ##
+    input of 5 yields correct output:
+      - run: python3 mario.py
+        stdin: 5
+        stdout: |
+              #
+             ##
+            ###
+           ####
+          #####
+    input of 8 yields correct output:
+      - run: python3 mario.py
+        stdin: 8
+        stdout: |
+                 #
+                ##
+               ###
+              ####
+             #####
+            ######
+           #######
+          ########
+    input of -3 does not output:
+      - run: python3 mario.py
+        stdin: -3
+        stdout: "Height: "
+    input of 0 does not output:
+      - run: python3 mario.py
+        stdin: 0
+        stdout: "Height: "
+    input of 9 does not output:
+      - run: python3 mario.py 
+        stdin: 9
+        stdout: "Height: "
+    input of 12 does not output:
+      - run: python3 mario.py
+        stdin: 12
+        stdout: "Height: "
+    input of hello does not output:
+      - run: python3 mario.py
+        stdin: hello
+        stdout: "Height: "
