@@ -36,7 +36,7 @@ check50:
       - run: python3 mario.py
         stdin: -3
         stdout: 
-          - "Height: "
+          - "Height:"
           - 
     input of 0 does not output:
       - run: python3 mario.py
