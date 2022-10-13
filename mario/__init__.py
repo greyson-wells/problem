@@ -15,4 +15,4 @@ def test1():
 @check50.check(exists)
 def test_negative_two():
   """rejects a height of -2"""
-  check50.run("python3 mario.py").stdin("-1").reject()
+  check50.run("python3 mario.py").stdin("-1").stdout(r'\$?', '').exit()
