@@ -40,7 +40,7 @@ check50:
     input of 0 does not output:
       - run: python3 mario.py
         stdin: 0
-        stdout: 
+        stdout: Height:
     input of 9 does not output:
       - run: python3 mario.py 
         stdin: 9
