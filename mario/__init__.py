@@ -5,7 +5,7 @@ import re
 def exists():
   """mario.py exists"""
   check50.exists("mario.py")
-  self.add("1.txt", "2.txt", "5.txt", "8.txt")
+  check50.include("1.txt", "2.txt", "5.txt", "8.txt")
   
 @check50.check(exists)
 def test1():
