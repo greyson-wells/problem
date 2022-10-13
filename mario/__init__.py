@@ -11,3 +11,8 @@ def exists():
 def test1():
   """input of 1 yields correct output"""
   output = check50.run("python3 mario.py").stdin("1", prompt=False).stdout(r'\$?#', '#\n').exit()
+
+@check50.check(exists)
+def test_negative_two():
+  """rejects a height of -2"""
+  check50.run("python3 mario.py").stdin("-1").reject()
