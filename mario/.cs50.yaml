@@ -35,20 +35,20 @@ check50:
     input of -3 does not output:
       - run: python3 mario.py
         stdin: -3
-        stdout: "Height: "
+        stdout: 
     input of 0 does not output:
       - run: python3 mario.py
         stdin: 0
-        stdout: "Height: "
+        stdout: 
     input of 9 does not output:
       - run: python3 mario.py 
         stdin: 9
-        stdout: "Height: "
+        stdout: 
     input of 12 does not output:
       - run: python3 mario.py
         stdin: 12
-        stdout: "Height: "
+        stdout: 
     input of hello does not output:
       - run: python3 mario.py
         stdin: hello
-        stdout: "Height: "
+        stdout: 
