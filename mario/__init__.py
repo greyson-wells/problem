@@ -18,7 +18,6 @@ def test1():
 @check50.check(exists)
 def test2():
   """input of 2 yields correct output"""
-  output
   
 @check50.check(exists)
 def test_negative_two():
