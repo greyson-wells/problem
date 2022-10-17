@@ -18,7 +18,7 @@ def test_negative_two():
   """rejects a height of -2"""
   output = check50.run("python3 mario.py").stdin("-1").stdout()
   if not output == "":
-    raise check50.Failure("invalid input")
+    raise check50.Failure("program did not reject invalid input")
 
 def regex(num):
   """testing"""
