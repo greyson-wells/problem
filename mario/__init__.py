@@ -1,5 +1,6 @@
 import check50
 import re
+from re import escape
 
 @check50.check()
 def exists():
