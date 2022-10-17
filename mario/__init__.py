@@ -21,4 +21,4 @@ def test_negative_two():
 
 def regex(num):
   """testing"""
-  return fr'escape(num)}'
+  return fr'^.*{escape(num)}.*$'
