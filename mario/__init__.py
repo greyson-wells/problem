@@ -11,8 +11,15 @@ def exists():
 @check50.check(exists)
 def test1():
   """input of 1 yields correct output"""
-  output = check50.run("python3 mario.py").stdin("1", prompt=False).stdout(r'\$?#', '#\n').exit()
+  output = check50.run("python3 mario.py").stdin("1").stdout()
+  checkPyramid(output, open("1.txt").read())
+  
 
+@check50.check(exists)
+def test2():
+  """input of 2 yields correct output"""
+  output
+  
 @check50.check(exists)
 def test_negative_two():
   """rejects a height of -2"""
@@ -20,6 +27,6 @@ def test_negative_two():
   if not output == "":
     raise check50.Failure("program did not reject invalid input")
 
-def regex(num):
-  """testing"""
-  return fr'{escape(num)}'
+def checkPyramid(output, correct):
+  if output == correct:
+    return
