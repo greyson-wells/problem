@@ -12,7 +12,7 @@ def exists():
 def test1():
   """input of 1 yields correct output"""
   output = check50.run("python3 mario.py").stdin("1").stdout()
-  if not output == "#":
+  if not output == open("1.txt").read():
     raise check50.Failure("did not correctly build pyramid of height 1")
   
 
