@@ -19,6 +19,9 @@ def test1():
 @check50.check(exists)
 def test2():
   """input of 2 yields correct output"""
+  output = check50.run("python3 mario.py").stdin("2").stdout()
+  if not output == open("2.txt").read():
+    raise check50.Failure("did not correctly build pyramid of height 2")
   
 @check50.check(exists)
 def test_negative_two():
