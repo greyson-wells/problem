@@ -11,4 +11,5 @@ def exists():
 def test_player1_condition1():
   """player 1 wins with a horizontal line"""
   input = open("p1win1.txt").read
+  print(input)
   check50.run("python connect.py").stdin(input).stdout("P1 WINS")
