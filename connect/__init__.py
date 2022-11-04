@@ -11,6 +11,7 @@ def exists():
 def test():
   """testing"""
   abctest = open("p1win1.txt").read()
+  print(abctest)
   
 @check50.check(exists)
 def test_player1_condition1():
