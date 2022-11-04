@@ -10,8 +10,6 @@ def exists():
 @check50.check()
 def test(exists):
   """testing"""
-  input = open("p1win1.txt").read()
-  print(input)
   
 @check50.check(exists)
 def test_player1_condition1():
