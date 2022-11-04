@@ -10,7 +10,7 @@ def exists():
 @check50.check()
 def test(exists):
   """testing"""
-  input = open("p1win2.txt").read()
+  input = open("p1win1.txt").read()
   print(input)
   
 @check50.check(exists)
