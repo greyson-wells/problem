@@ -10,10 +10,7 @@ def exists():
 @check50.check(exists)
 def test():
   """testing"""
-  abctest = open("p1win1.txt").read()
-  print(abctest)
-  
-test()
+  check50.run("python connect.py").stdin("p1").stdin("p2").stdout("asdfask")
   
 @check50.check(exists)
 def test_player1_condition1():
