@@ -10,7 +10,7 @@ def exists():
 @check50.check(exists)
 def test():
   """testing"""
-  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("1").stdin("7").stdin("2").stdin("6").stdin("3").stdin("5").stdin("4").stdout("asdfask")
+  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("1").stdin("7").stdin("2").stdin("6").stdin("3").stdin("5").stdin("4").stdout("P1 WINS")
   
 @check50.check(exists)
 def test_player1_condition1():
