@@ -10,6 +10,7 @@ def exists():
 @check50.check()
 def test(exists):
   """testing"""
+  abctest = open("p1win1.txt").read()
   
 @check50.check(exists)
 def test_player1_condition1():
