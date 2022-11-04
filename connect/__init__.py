@@ -29,7 +29,7 @@ def test_player1_condition4():
 @check50.check(exists)
 def test_player2_condition1():
   """player 2 wins with a horizontal line"""
-  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("7").stdin("1").stdin("7").stdin("2").stdin("6").stdin("3").stdin("5").stdin("4").stdout("P1 WINS")
+  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("7").stdin("1").stdin("7").stdin("2").stdin("6").stdin("3").stdin("5").stdin("4").stdout("P2 WINS")
   
 @check50.check(exists)
 def test_player2_condition2():
@@ -39,7 +39,7 @@ def test_player2_condition2():
 @check50.check(exists)
 def test_player2_condition3():
   """player 2 wins with a bottom left to top right diagonal line"""
-  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("7").stdin("1").stdin("2").stdin("2").stdin("3").stdin("3").stdin("4").stdin("3").stdin("4").stdin("4").stdin("7").stdin("4").stdout("P1 WINS")
+  check50.run("python connect.py").stdin("p1").stdin("p2").stdin("7").stdin("1").stdin("2").stdin("2").stdin("3").stdin("3").stdin("4").stdin("3").stdin("4").stdin("4").stdin("7").stdin("4").stdout("P2 WINS")
 
 @check50.check(exists)
 def test_player2_condition4():
